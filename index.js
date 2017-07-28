@@ -1,3 +1,5 @@
+import React, { Component } from "react"
+
 export default class extends Component {
   constructor() {
     super()
@@ -14,14 +16,14 @@ export default class extends Component {
   }
 
   componentDidMount() {
-    document.addEventListener('click', this.handleOutsideClick, true)
+    document.addEventListener("click", this.handleOutsideClick, true)
   }
 
   componentWillUnmount() {
-    document.removeEventListener('click', this.handleOutsideClick, true)
+    document.removeEventListener("click", this.handleOutsideClick, true)
   }
 
   render() {
-    return <div ref={c => (this.container = c)} {...props} />
+    return <div ref={c => (this.container = c)} {...this.props} />
   }
 }
