@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `<div />`;
+
+exports[`renders with children 1`] = `
+<div>
+  Hi, I'm 
+  <em>
+    children
+  </em>
+  !
+</div>
+`;
+
+exports[`renders with non-native api props removed 1`] = `
+<span
+  className="some-class"
+  id="myId"
+  style={null}
+/>
+`;

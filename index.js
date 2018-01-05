@@ -24,9 +24,9 @@ export default class extends Component {
   }
 
   render() {
-    const props = { ...this.props }
+    const { component: C = "div", ...props } = { ...this.props }
     delete props.onOutsideClick
 
-    return <div ref={c => (this.container = c)} {...props} />
+    return <C ref={c => (this.container = c)} {...props} />
   }
 }
